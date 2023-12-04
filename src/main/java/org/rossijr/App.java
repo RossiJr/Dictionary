@@ -10,7 +10,8 @@ public class App {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         if (entityManager != null) {
-            // UI logic here
+            //UI logic here
+            JPAUtil.closeEntityManagerFactory();
         }
     }
 }
